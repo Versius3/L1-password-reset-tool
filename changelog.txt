@@ -1,0 +1,12 @@
+L1 Password reset tool V2 - What's new
+
+v2.1.1
+• Text size can now be changed: use A− and A+ in the title bar, or Ctrl + / Ctrl − (also Ctrl + mouse wheel). Click the percentage, or press Ctrl 0, to go back to 100%.
+• Your text size is remembered for you only - it does not change the tool for other operators.
+
+v2.1.0
+• If an SMS cannot be sent, the password stays on screen and the card shows "Retry sending SMS". It sends the same password again - press it as often as needed.
+• SMS attempts are now 7 seconds apart instead of 2, so a briefly busy gateway has time to recover.
+• After 2 minutes without activity the password is hidden (press Show to see it again). It is deleted only after 5 minutes without activity.
+• New ⟳ button in the title bar: check for updates at any time.
+• The tool now updates itself. If someone else has it open, nothing is changed and you are told why.
