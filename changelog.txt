@@ -1,5 +1,10 @@
 L1 Password reset tool V2 - What's new
 
+v2.2.0
+• Updates no longer need everyone to close the tool. Whoever installs an update can carry on working, and so can everyone else.
+• When a newer version has been installed, a "ready - restart" button appears in the title bar. Click it when no password is on screen - nothing happens until you do.
+• Start the tool from the new shortcut (L1PasswordResetTool folder). The old App folder is no longer used.
+
 v2.1.1
 • Text size can now be changed: use A− and A+ in the title bar, or Ctrl + / Ctrl − (also Ctrl + mouse wheel). Click the percentage, or press Ctrl 0, to go back to 100%.
 • Your text size is remembered for you only - it does not change the tool for other operators.
