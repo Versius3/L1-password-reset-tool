@@ -1,5 +1,15 @@
 L1 Password reset tool V2 - What's new
 
+v2.2.1
+• New spelling under the password, ready to read out: "capital K as in Kilo", "small m as in Mike", "number seven". Capitals are marked in colour, and every character shows its position.
+• The AD card now shows when the password really expires ("expired on…", "expires on… in N days", "never expires"), as AD itself works it out. "Must change password at next logon" is no longer shown as "expired".
+• Failed sign-ins are now read from the domain controller that sees them all, with the time of the last one ("last 10:42, 2 min ago"). A very recent failure means a device is still using an old password - the card tells you so.
+• Confirmed delivery: after an SMS goes to the caller, the card asks "Did the caller receive the SMS?". "Not received" lets you send the same password again straight away (and is recorded as a failed delivery).
+• Keyboard shortcuts: Ctrl+1 … Ctrl+5 switch tabs, Ctrl+F jumps to the search field, Ctrl+Shift+P copies the password on screen, Esc clears the AD User tab (it asks first if a password is on screen).
+• The SMS buttons now show the end of the number they send to (for example "…45") - check it with the caller before you click.
+• Copied passwords no longer appear in the Windows clipboard history (Win+V). Pasting works exactly as before.
+• WizzPhone link: once a reset or unlock is finished (SMS sent, or you confirmed it), WizzPhone on your PC fills in the user and ticks the ticket category by itself - for AD "AD unlock account", "AD pw reset", or both - with an Undo button in case you were in the middle of another ticket. Needs WizzPhone 2.9.1. The password itself is never passed on.
+
 v2.2.0
 • Updates no longer need everyone to close the tool. Whoever installs an update can carry on working, and so can everyone else.
 • When a newer version has been installed, a "ready - restart" button appears in the title bar. Click it when no password is on screen - nothing happens until you do.
