@@ -1,5 +1,12 @@
 L1 Password reset tool V2 - What's new
 
+v2.2.2
+• Fixed: a deleted station (or a deleted or deactivated contact) no longer turns up in Ground Handlers. Changes in the Database tab now reach the shared SQL list straight away, not only this computer's copy.
+• Ground Handlers no longer lists contacts for a station that is not in the station list. If SQL still holds old contacts for it, the card says so.
+• Supervisors: Database → "Fix a station in SQL…" shows what SQL holds for a station and clears contacts left behind by stations deleted before this update.
+• Ground Handlers: user IDs that start with L or P followed by four digits (e.g. L1234, P5678) now get a password too. They have no station and no SMS — set the password in NewSkies and read it to the caller.
+• Faster: AD searches and Ground Handlers lookups run in the background, so the window no longer freezes while they work, and a search no longer opens a new AD connection every time.
+
 v2.2.1
 • New spelling under the password, ready to read out: "capital K as in Kilo", "small m as in Mike", "number seven". Capitals are marked in colour, and every character shows its position.
 • The AD card now shows when the password really expires ("expired on…", "expires on… in N days", "never expires"), as AD itself works it out. "Must change password at next logon" is no longer shown as "expired".
