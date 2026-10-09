@@ -1,5 +1,11 @@
 L1 Password reset tool V2 - What's new
 
+v2.2.3
+• Fixed: the Ground Handlers station list (newskies.dat) could be replaced by an EMPTY one when the shared folder answered slowly at startup, and a second, empty newskies.dat could appear beside the program. Neither can happen any more: a file that seems missing is checked again, and a file set in config.json is never replaced or swapped for another.
+• Automatic backups of the station list in the "newskies-backups" folder beside it (one per day, and always before a change that empties the list).
+• If the station list in use is empty or cannot be read, everyone is told at startup, and the bottom bar shows how many stations are loaded.
+• Supervisors: Database → "Find / restore data file…" lists every copy and backup of newskies.dat with its stations and last changes, and puts the right one back.
+
 v2.2.2
 • Fixed: a deleted station (or a deleted or deactivated contact) no longer turns up in Ground Handlers. Changes in the Database tab now reach the shared SQL list straight away, not only this computer's copy.
 • Ground Handlers no longer lists contacts for a station that is not in the station list. If SQL still holds old contacts for it, the card says so.
