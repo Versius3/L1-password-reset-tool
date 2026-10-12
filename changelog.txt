@@ -1,5 +1,9 @@
 L1 Password reset tool V2 - What's new
 
+v2.2.4
+• Fixed: Ground Handlers sometimes said the SMS reached 0 recipients although the station received the password. The SMS gateway can take longer than 30 seconds to answer; the tool now waits up to 100 seconds (as the old tool did), and a message the gateway does not confirm in time counts as sent — with a note — instead of failed. It is no longer sent again automatically, so nobody gets the same text twice.
+• Once a reset is complete, the password is cleared from the screen after 30 seconds: when the caller confirms the SMS arrived ("Yes, received"), when you press "Read out to the caller — done", or when every station was texted. "Keep on screen" keeps it as before.
+
 v2.2.3
 • Fixed: the Ground Handlers station list (newskies.dat) could be replaced by an EMPTY one when the shared folder answered slowly at startup, and a second, empty newskies.dat could appear beside the program. Neither can happen any more: a file that seems missing is checked again, and a file set in config.json is never replaced or swapped for another.
 • Automatic backups of the station list in the "newskies-backups" folder beside it (one per day, and always before a change that empties the list).
