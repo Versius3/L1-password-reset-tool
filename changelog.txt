@@ -1,5 +1,12 @@
 L1 Password reset tool V2 - What's new
 
+v2.2.5
+• Ground Handlers: several IDs now get ONE password, the same for all of them. Set it on every account in NewSkies. Each station contact gets one notice naming that station's accounts (e.g. "…requested for : PRG111, PRG112") and the password once — no longer a notice and a password per account. "Generate a different password" changes it for all of them.
+• Fixed: Ground Handlers resets for several accounts passed only one username to WizzPhone. As soon as the SMS has gone, WizzPhone gets all the usernames at once, separated by commas (e.g. PRG111,PRG112) — even if you copied something else in the meantime: the user IDs are then put on the clipboard for the ticket.
+• Ground Handlers: an account whose station has nobody to text now has a button on the card, "… has been set in NewSkies". Press it once you have set it, and it joins the list for WizzPhone straight away (no longer only when you leave the tab).
+• A long list of IDs in the SMS notice is now split between IDs, never in the middle of one: "…requested for (1/3) : BUD001, …", "(2/3)", "(3/3)", each a single text.
+• WizzPhone 2.9.2 takes up to about 100 IDs from one reset (WizzPhone 2.9.1: about 35). If a batch is ever bigger than that, the tool says so and puts the IDs on the clipboard to paste.
+
 v2.2.4
 • Fixed: Ground Handlers sometimes said the SMS reached 0 recipients although the station received the password. The SMS gateway can take longer than 30 seconds to answer; the tool now waits up to 100 seconds (as the old tool did), and a message the gateway does not confirm in time counts as sent — with a note — instead of failed. It is no longer sent again automatically, so nobody gets the same text twice.
 • Once a reset is complete, the password is cleared from the screen after 30 seconds: when the caller confirms the SMS arrived ("Yes, received"), when you press "Read out to the caller — done", or when every station was texted. "Keep on screen" keeps it as before.
